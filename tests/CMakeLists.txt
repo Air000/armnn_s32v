@@ -1,7 +1,7 @@
 # UnitTests
 include(CheckIncludeFiles)
 
-include_directories(SYSTEM "${THIRD_PARTY_INCLUDE_DIRS}")
+#include_directories(SYSTEM "${THIRD_PARTY_INCLUDE_DIRS}")
 
 # Setup the inference test framework
 set(inference_test_sources

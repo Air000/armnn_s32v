@@ -154,6 +154,7 @@ public:
         return m_OutputBindingInfo.second.GetNumElements();
     }
 
+    //void Run(const std::vector<TDataType>& input, std::vector<TDataType>& output)
     void Run(const std::vector<TDataType>& input, std::vector<TDataType>& output)
     {
         BOOST_ASSERT(output.size() == GetOutputSize());

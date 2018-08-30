@@ -1,0 +1,2 @@
+/usr/bin/ar qc libarmnnUtils.a  CMakeFiles/armnnUtils.dir/src/armnnUtils/Logging.cpp.o CMakeFiles/armnnUtils.dir/src/armnnUtils/Permute.cpp.o CMakeFiles/armnnUtils.dir/src/armnnUtils/DotSerializer.cpp.o CMakeFiles/armnnUtils.dir/src/armnnUtils/HeapProfiling.cpp.o CMakeFiles/armnnUtils.dir/src/armnnUtils/LeakChecking.cpp.o
+/usr/bin/ranlib libarmnnUtils.a

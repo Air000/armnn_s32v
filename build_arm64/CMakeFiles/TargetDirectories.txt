@@ -1,0 +1,11 @@
+/media/air/6f43c45d-eb70-eb42-801a-ed77dc73e87f/armnn/armnn/build_arm64/CMakeFiles/install.dir
+/media/air/6f43c45d-eb70-eb42-801a-ed77dc73e87f/armnn/armnn/build_arm64/CMakeFiles/armnn.dir
+/media/air/6f43c45d-eb70-eb42-801a-ed77dc73e87f/armnn/armnn/build_arm64/CMakeFiles/UnitTests.dir
+/media/air/6f43c45d-eb70-eb42-801a-ed77dc73e87f/armnn/armnn/build_arm64/CMakeFiles/edit_cache.dir
+/media/air/6f43c45d-eb70-eb42-801a-ed77dc73e87f/armnn/armnn/build_arm64/CMakeFiles/install/local.dir
+/media/air/6f43c45d-eb70-eb42-801a-ed77dc73e87f/armnn/armnn/build_arm64/CMakeFiles/AdditionalCMakeFiles.dir
+/media/air/6f43c45d-eb70-eb42-801a-ed77dc73e87f/armnn/armnn/build_arm64/CMakeFiles/install/strip.dir
+/media/air/6f43c45d-eb70-eb42-801a-ed77dc73e87f/armnn/armnn/build_arm64/CMakeFiles/list_install_components.dir
+/media/air/6f43c45d-eb70-eb42-801a-ed77dc73e87f/armnn/armnn/build_arm64/CMakeFiles/armnnUtils.dir
+/media/air/6f43c45d-eb70-eb42-801a-ed77dc73e87f/armnn/armnn/build_arm64/CMakeFiles/armnnTfParser.dir
+/media/air/6f43c45d-eb70-eb42-801a-ed77dc73e87f/armnn/armnn/build_arm64/CMakeFiles/rebuild_cache.dir

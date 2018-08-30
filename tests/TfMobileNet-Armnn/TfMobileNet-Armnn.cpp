@@ -44,7 +44,8 @@ int main(int argc, char* argv[])
 
         // Coverity fix: ClassifierInferenceTestMain() may throw uncaught exceptions.
         retVal = armnn::test::ClassifierInferenceTestMain<MobileNetDatabase, armnnTfParser::ITfParser>(
-                     argc, argv, "mobilenet_v1_1.0_224_fp32.pb", true, "input", "output", { 0, 1, 2 },
+                     argc, argv, "mobilenet_v1_1.0_224_fp32.pb", true, "input", "MobilenetV1/Predictions/Reshape_1", { 0, 1, 2 },
+                     //argc, argv, "mobilenet_v1_1.0_224_fp32.pb", true, "input", "output", { 0, 1, 2 },
                      [&imageSet](const char* dataDir) {
                          return MobileNetDatabase(
                              dataDir,

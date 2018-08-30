@@ -11,6 +11,7 @@
 #endif
 #include "Logging.hpp"
 #include "../InferenceTest.hpp"
+#include "../InferenceTestImage.hpp"
 
 #include <boost/program_options.hpp>
 #include <boost/algorithm/string/split.hpp>
@@ -19,6 +20,7 @@
 #include <iostream>
 #include <fstream>
 
+#include "mnist_loader.hpp"
 namespace
 {
 
@@ -87,6 +89,110 @@ void PrintArray(const std::vector<float>& v)
     printf("\n");
 }
 
+// Helper function to make input tensors
+armnn::InputTensors MakeInputTensors(const std::pair<armnn::LayerBindingId,
+    armnn::TensorInfo>& input,
+    const void* inputTensorData)
+{
+    return { { input.first, armnn::ConstTensor(input.second, inputTensorData) } };
+}
+
+// Helper function to make output tensors
+armnn::OutputTensors MakeOutputTensors(const std::pair<armnn::LayerBindingId,
+    armnn::TensorInfo>& output,
+    void* outputTensorData)
+{
+    return { { output.first, armnn::Tensor(output.second, outputTensorData) } };
+}
+
+namespace
+{
+
+inline float Lerp(float a, float b, float w)
+{
+    return w * b + (1.f - w) * a;
+}
+
+inline void PutData(std::vector<float> & data,
+                    const unsigned int width,
+                    const unsigned int x,
+                    const unsigned int y,
+                    const unsigned int c,
+                    float value)
+{
+    data[(3*((y*width)+x)) + c] = value;
+}
+
+std::vector<float>
+ResizeBilinearAndNormalize(const InferenceTestImage & image,
+                           const unsigned int outputWidth,
+                           const unsigned int outputHeight)
+{
+    std::vector<float> out;
+    out.resize(outputWidth * outputHeight * 3);
+
+    // We follow the definition of TensorFlow and AndroidNN: The top-left corner of a texel in the output
+    // image is projected into the input image to figure out the interpolants and weights. Note that this
+    // will yield different results than if projecting the centre of output texels.
+
+    const unsigned int inputWidth = image.GetWidth();
+    const unsigned int inputHeight = image.GetHeight();
+
+    // How much to scale pixel coordinates in the output image to get the corresponding pixel coordinates
+    // in the input image
+    const float scaleY = boost::numeric_cast<float>(inputHeight) / boost::numeric_cast<float>(outputHeight);
+    const float scaleX = boost::numeric_cast<float>(inputWidth) / boost::numeric_cast<float>(outputWidth);
+
+    uint8_t rgb_x0y0[3];
+    uint8_t rgb_x1y0[3];
+    uint8_t rgb_x0y1[3];
+    uint8_t rgb_x1y1[3];
+
+    for (unsigned int y = 0; y < outputHeight; ++y)
+    {
+        // Corresponding real-valued height coordinate in input image
+        const float iy = boost::numeric_cast<float>(y) * scaleY;
+
+        // Discrete height coordinate of top-left texel (in the 2x2 texel area used for interpolation)
+        const float fiy = floorf(iy);
+        const unsigned int y0 = boost::numeric_cast<unsigned int>(fiy);
+
+        // Interpolation weight (range [0,1])
+        const float yw = iy - fiy;
+
+        for (unsigned int x = 0; x < outputWidth; ++x)
+        {
+            // Real-valued and discrete width coordinates in input image
+            const float ix = boost::numeric_cast<float>(x) * scaleX;
+            const float fix = floorf(ix);
+            const unsigned int x0 = boost::numeric_cast<unsigned int>(fix);
+
+            // Interpolation weight (range [0,1])
+            const float xw = ix - fix;
+
+            // Discrete width/height coordinates of texels below and to the right of (x0, y0)
+            const unsigned int x1 = std::min(x0 + 1, inputWidth - 1u);
+            const unsigned int y1 = std::min(y0 + 1, inputHeight - 1u);
+
+            std::tie(rgb_x0y0[0], rgb_x0y0[1], rgb_x0y0[2]) = image.GetPixelAs3Channels(x0, y0);
+            std::tie(rgb_x1y0[0], rgb_x1y0[1], rgb_x1y0[2]) = image.GetPixelAs3Channels(x1, y0);
+            std::tie(rgb_x0y1[0], rgb_x0y1[1], rgb_x0y1[2]) = image.GetPixelAs3Channels(x0, y1);
+            std::tie(rgb_x1y1[0], rgb_x1y1[1], rgb_x1y1[2]) = image.GetPixelAs3Channels(x1, y1);
+
+            for (unsigned c=0; c<3; ++c)
+            {
+                const float ly0 = Lerp(float(rgb_x0y0[c]), float(rgb_x1y0[c]), xw);
+                const float ly1 = Lerp(float(rgb_x0y1[c]), float(rgb_x1y1[c]), xw);
+                const float l = Lerp(ly0, ly1, yw);
+                PutData(out, outputWidth, x, y, c, l/255.0f);
+            }
+        }
+    }
+
+    return out;
+}
+
+}
 template<typename TParser, typename TDataType>
 int MainImpl(const char* modelPath, bool isModelBinary, armnn::Compute computeDevice,
     const char* inputName, const armnn::TensorShape* inputTensorShape, const char* inputTensorDataFilePath,
@@ -95,13 +201,15 @@ int MainImpl(const char* modelPath, bool isModelBinary, armnn::Compute computeDe
     // Load input tensor
     std::vector<TDataType> input;
     {
-        std::ifstream inputTensorFile(inputTensorDataFilePath);
-        if (!inputTensorFile.good())
-        {
-            BOOST_LOG_TRIVIAL(fatal) << "Failed to load input tensor data file from " << inputTensorDataFilePath;
-            return 1;
-        }
-        input = ParseArray<TDataType>(inputTensorFile);
+        /*int testImageIndex = 0;  
+	std::unique_ptr<MnistImage> inputImage = loadMnistImage(inputTensorDataFilePath, testImageIndex);
+    	if (inputImage == nullptr)
+        	return 1;
+	*/
+
+
+	//input = static_cast<float>(inputImage->image[0]);
+        //input = ParseArray<TDataType>(inputTensorFile);
     }
 
     try
@@ -118,10 +226,42 @@ int MainImpl(const char* modelPath, bool isModelBinary, armnn::Compute computeDe
 
         // Execute the model
         std::vector<TDataType> output(model.GetOutputSize());
-        model.Run(input, output);
 
-        // Print the output tensor
-        PrintArray(output);
+	for(int i=0; i<10; i++)
+	{
+		InferenceTestImage image("./asserts_alexnet/gold_fish.ppm");
+		std::vector<float> resized(ResizeBilinearAndNormalize(image, 224, 224));
+		input.assign(resized.begin(), resized.end());
+		std::cout << "resized size: " << resized.size() << '\n';
+		
+        	model.Run(input, output);
+
+		std::map<float,int> resultMap;
+	        {
+	            int index = 0;
+	            for (const auto & o : output)
+	            {
+	                resultMap[o] = index++;
+	            }
+		}
+	    {
+            	auto it = resultMap.rbegin();
+            	for (int i=0; i<5 && it != resultMap.rend(); ++i)
+            	{
+                	BOOST_LOG_TRIVIAL(info) << "Top(" << (i+1) << ") prediction is " << it->second <<
+                  	" with confidence: " << 100.0*(it->first) << "%";
+                	++it;
+            	}
+            }
+
+        	const unsigned int prediction = boost::numeric_cast<unsigned int>(
+        	std::distance(output.begin(), std::max_element(output.begin(), output.end())));
+
+        	BOOST_LOG_TRIVIAL(info) <<  "prediction is" << prediction;	   
+	 }
+            
+            // Print the output tensor
+        //PrintArray(output);
     }
     catch (armnn::Exception const& e)
     {
