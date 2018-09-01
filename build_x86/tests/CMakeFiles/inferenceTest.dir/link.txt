@@ -1,0 +1,2 @@
+/usr/bin/ar qc libinferenceTest.a  CMakeFiles/inferenceTest.dir/InferenceTest.cpp.o CMakeFiles/inferenceTest.dir/InferenceTestImage.cpp.o
+/usr/bin/ranlib libinferenceTest.a

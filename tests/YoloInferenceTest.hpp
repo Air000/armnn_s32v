@@ -134,6 +134,15 @@ public:
         auto outputIt  = detectedObjects.begin();
         auto outputEnd = detectedObjects.end();
 
+	for (const YoloDetectedObject& detection : detectedObjects)
+	{
+	
+ 	    if (detection.m_Confidence < 0.2) continue;
+
+	    BOOST_LOG_TRIVIAL(info) << "Prediction class is " << detection.m_Class << ", position is " << detection.m_Box.m_X << " " << detection.m_Box.m_Y << " " << detection.m_Box.m_W << " " << detection.m_Box.m_H << ", confidence is " << detection.m_Confidence;
+		
+	}
+
         for (const YoloDetectedObject& expectedDetection : m_TopObjectDetections)
         {
             if (outputIt == outputEnd)

@@ -32,7 +32,7 @@ int main(int argc, char* argv[])
                         typename YoloInferenceModel::Params modelParams;
                         modelParams.m_ModelPath = modelOptions.m_ModelDir + "yolov1_tiny_voc2007_model.caffemodel";
                         modelParams.m_InputBinding = "data";
-                        modelParams.m_OutputBinding = "fc12";
+                        modelParams.m_OutputBinding = "result";
                         modelParams.m_InputTensorShape = &inputTensorShape;
                         modelParams.m_IsModelBinary = true;
                         modelParams.m_ComputeDevice = modelOptions.m_ComputeDevice;

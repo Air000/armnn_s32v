@@ -4,252 +4,261 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.9~svn20110310	//
-AddCommandLineOptions	./InferenceModel.hpp	/^    static void AddCommandLineOptions(boost::program_options::options_description& desc, CommandLineOptions& options)$/;"	f	class:InferenceModel
-AddCommandLineOptions	./InferenceTest.hpp	/^    virtual void AddCommandLineOptions(boost::program_options::options_description& options) {};$/;"	f	class:armnn::test::IInferenceTestCaseProvider
-Aeroplane	./YoloDatabase.cpp	/^    Aeroplane,$/;"	m	class:__anon4::YoloVocClass	file:
-Bicycle	./YoloDatabase.cpp	/^    Bicycle,$/;"	m	class:__anon4::YoloVocClass	file:
-Bird	./YoloDatabase.cpp	/^    Bird,$/;"	m	class:__anon4::YoloVocClass	file:
-Bmp	./InferenceTestImage.hpp	/^        Bmp,$/;"	m	class:InferenceTestImage::WriteFormat
-Boat	./YoloDatabase.cpp	/^    Boat,$/;"	m	class:__anon4::YoloVocClass	file:
-Bottle	./YoloDatabase.cpp	/^    Bottle,$/;"	m	class:__anon4::YoloVocClass	file:
-Bus	./YoloDatabase.cpp	/^    Bus,$/;"	m	class:__anon4::YoloVocClass	file:
-Car	./YoloDatabase.cpp	/^    Car,$/;"	m	class:__anon4::YoloVocClass	file:
-Cat	./YoloDatabase.cpp	/^    Cat,$/;"	m	class:__anon4::YoloVocClass	file:
-Chair	./YoloDatabase.cpp	/^    Chair,$/;"	m	class:__anon4::YoloVocClass	file:
-Cifar10Database	./Cifar10Database.cpp	/^Cifar10Database::Cifar10Database(const std::string& binaryFileDirectory, bool rgbPack)$/;"	f	class:Cifar10Database
-Cifar10Database	./Cifar10Database.hpp	/^class Cifar10Database$/;"	c
-ClassifierTestCase	./InferenceTest.hpp	/^class ClassifierTestCase : public InferenceModelTestCase<TModel>$/;"	c	namespace:armnn::test
-ClassifierTestCaseData	./ClassifierTestCaseData.hpp	/^    ClassifierTestCaseData(unsigned int label, std::vector<DataType> inputImage)$/;"	f	class:ClassifierTestCaseData
-ClassifierTestCaseData	./ClassifierTestCaseData.hpp	/^class ClassifierTestCaseData$/;"	c
-ClassifierTestCaseProvider	./InferenceTest.hpp	/^class ClassifierTestCaseProvider : public IInferenceTestCaseProvider$/;"	c	namespace:armnn::test
-CommandLineOptions	./InferenceModel.hpp	/^    struct CommandLineOptions$/;"	s	class:InferenceModel
-Cow	./YoloDatabase.cpp	/^    Cow,$/;"	m	class:__anon4::YoloVocClass	file:
-DiningTable	./YoloDatabase.cpp	/^    DiningTable,$/;"	m	class:__anon4::YoloVocClass	file:
-Dog	./YoloDatabase.cpp	/^    Dog,$/;"	m	class:__anon4::YoloVocClass	file:
-EndianSwap	./ExecuteNetwork/mnist_loader.hpp	/^void EndianSwap(unsigned int &x)$/;"	f
-EndianSwap	./MnistDatabase.cpp	/^void EndianSwap(unsigned int &x)$/;"	f
-Failed	./InferenceTest.hpp	/^    Failed,$/;"	m	class:armnn::test::TestCaseResult
-G	./InferenceTestImage.hpp	/^    G,$/;"	m	class:ImageChannel
-GetHeight	./InferenceTestImage.hpp	/^    unsigned int GetHeight() const { return m_Height; }$/;"	f	class:InferenceTestImage
-GetImageChannelIndex	./InferenceTestImage.cpp	/^unsigned int GetImageChannelIndex(ImageChannelLayout channelLayout, ImageChannel channel)$/;"	f	namespace:__anon2
-GetImageDataAsNormalizedFloats	./InferenceTestImage.cpp	/^std::vector<float> GetImageDataAsNormalizedFloats(ImageChannelLayout layout,$/;"	f
-GetImageDataInArmNnLayoutAsFloats	./InferenceTestImage.cpp	/^std::vector<float> GetImageDataInArmNnLayoutAsFloats(ImageChannelLayout channelLayout,$/;"	f
-GetImageDataInArmNnLayoutAsFloatsSubtractingMean	./InferenceTestImage.cpp	/^std::vector<float> GetImageDataInArmNnLayoutAsFloatsSubtractingMean(ImageChannelLayout layout,$/;"	f
-GetImageDataInArmNnLayoutAsNormalizedFloats	./InferenceTestImage.cpp	/^std::vector<float> GetImageDataInArmNnLayoutAsNormalizedFloats(ImageChannelLayout layout,$/;"	f
-GetNumChannels	./InferenceTestImage.hpp	/^    unsigned int GetNumChannels() const { return m_NumChannels; }$/;"	f	class:InferenceTestImage
-GetNumElements	./InferenceTestImage.hpp	/^    unsigned int GetNumElements() const { return GetWidth() * GetHeight() * GetNumChannels(); }$/;"	f	class:InferenceTestImage
-GetNumImageBytes	./ImageNetDatabase.hpp	/^    unsigned int GetNumImageBytes() const { return 4 * GetNumImageElements(); }$/;"	f	class:ImageNetDatabase
-GetNumImageBytes	./MobileNetDatabase.hpp	/^    unsigned int GetNumImageBytes() const { return 4 * GetNumImageElements(); }$/;"	f	class:MobileNetDatabase
-GetNumImageElements	./ImageNetDatabase.hpp	/^    unsigned int GetNumImageElements() const { return 3 * m_Width * m_Height; }$/;"	f	class:ImageNetDatabase
-GetNumImageElements	./MobileNetDatabase.hpp	/^    unsigned int GetNumImageElements() const { return 3 * m_Width * m_Height; }$/;"	f	class:MobileNetDatabase
-GetOutput	./InferenceTest.hpp	/^    const std::vector<typename TModel::DataType>& GetOutput() const { return m_Output; }$/;"	f	class:armnn::test::InferenceModelTestCase
-GetOutputSize	./InferenceModel.hpp	/^    unsigned int GetOutputSize() const$/;"	f	class:InferenceModel
-GetPixelAs3Channels	./InferenceTestImage.cpp	/^std::tuple<uint8_t, uint8_t, uint8_t> InferenceTestImage::GetPixelAs3Channels(unsigned int x, unsigned int y) const$/;"	f	class:InferenceTestImage
-GetSingleElementSizeInBytes	./InferenceTestImage.hpp	/^    static unsigned int GetSingleElementSizeInBytes()$/;"	f	class:InferenceTestImage
-GetSizeInBytes	./InferenceTestImage.hpp	/^    unsigned int GetSizeInBytes() const { return GetNumElements() * GetSingleElementSizeInBytes(); }$/;"	f	class:InferenceTestImage
-GetTestCaseData	./Cifar10Database.cpp	/^std::unique_ptr<Cifar10Database::TTestCaseData> Cifar10Database::GetTestCaseData(unsigned int testCaseId)$/;"	f	class:Cifar10Database
-GetTestCaseData	./ImageNetDatabase.cpp	/^std::unique_ptr<ImageNetDatabase::TTestCaseData> ImageNetDatabase::GetTestCaseData(unsigned int testCaseId)$/;"	f	class:ImageNetDatabase
-GetTestCaseData	./MnistDatabase.cpp	/^std::unique_ptr<MnistDatabase::TTestCaseData> MnistDatabase::GetTestCaseData(unsigned int testCaseId)$/;"	f	class:MnistDatabase
-GetTestCaseData	./MobileNetDatabase.cpp	/^MobileNetDatabase::GetTestCaseData(unsigned int testCaseId)$/;"	f	class:MobileNetDatabase
-GetTestCaseData	./YoloDatabase.cpp	/^std::unique_ptr<YoloDatabase::TTestCaseData> YoloDatabase::GetTestCaseData(unsigned int testCaseId)$/;"	f	class:YoloDatabase
-GetTestCaseId	./InferenceTest.hpp	/^    unsigned int GetTestCaseId() const { return m_TestCaseId; }$/;"	f	class:armnn::test::InferenceModelTestCase
-GetWidth	./InferenceTestImage.hpp	/^    unsigned int GetWidth() const { return m_Width; }$/;"	f	class:InferenceTestImage
-Horse	./YoloDatabase.cpp	/^    Horse,$/;"	m	class:__anon4::YoloVocClass	file:
-IInferenceTestCase	./InferenceTest.hpp	/^class IInferenceTestCase$/;"	c	namespace:armnn::test
-IInferenceTestCaseProvider	./InferenceTest.hpp	/^class IInferenceTestCaseProvider$/;"	c	namespace:armnn::test
-ImageChannel	./InferenceTestImage.hpp	/^enum class ImageChannel$/;"	c
-ImageChannelLayout	./InferenceTestImage.hpp	/^enum class ImageChannelLayout$/;"	c
-ImageNetDatabase	./ImageNetDatabase.cpp	/^ImageNetDatabase::ImageNetDatabase(const std::string& binaryFileDirectory, unsigned int width, unsigned int height,$/;"	f	class:ImageNetDatabase
-ImageNetDatabase	./ImageNetDatabase.hpp	/^class ImageNetDatabase$/;"	c
-ImageNotFoundException	./YoloDatabase.cpp	/^class ImageNotFoundException : public armnn::Exception$/;"	c	namespace:__anon4	file:
-InferenceModel	./InferenceModel.hpp	/^    InferenceModel(const Params& params)$/;"	f	class:InferenceModel
-InferenceModel	./InferenceModel.hpp	/^class InferenceModel$/;"	c
-InferenceModelTestCase	./InferenceTest.hpp	/^    InferenceModelTestCase(TModel& model,$/;"	f	class:armnn::test::InferenceModelTestCase
-InferenceModelTestCase	./InferenceTest.hpp	/^class InferenceModelTestCase : public IInferenceTestCase$/;"	c	namespace:armnn::test
-InferenceTest	./InferenceTest.cpp	/^bool InferenceTest(const InferenceTestOptions& params,$/;"	f	namespace:armnn::test
-InferenceTestImage	./InferenceTestImage.cpp	/^InferenceTestImage::InferenceTestImage(char const* filePath)$/;"	f	class:InferenceTestImage
-InferenceTestImage	./InferenceTestImage.hpp	/^class InferenceTestImage$/;"	c
-InferenceTestImageException	./InferenceTestImage.hpp	/^class InferenceTestImageException : public armnn::Exception$/;"	c
-InferenceTestImageLoadFailed	./InferenceTestImage.hpp	/^class InferenceTestImageLoadFailed : public InferenceTestImageException$/;"	c
-InferenceTestImageOutOfBoundsAccess	./InferenceTestImage.hpp	/^class InferenceTestImageOutOfBoundsAccess : public InferenceTestImageException$/;"	c
-InferenceTestImageResizeFailed	./InferenceTestImage.hpp	/^class InferenceTestImageResizeFailed : public InferenceTestImageException$/;"	c
-InferenceTestImageWriteFailed	./InferenceTestImage.hpp	/^class InferenceTestImageWriteFailed : public InferenceTestImageException$/;"	c
-InferenceTestOptions	./InferenceTest.hpp	/^    InferenceTestOptions()$/;"	f	struct:armnn::test::InferenceTestOptions
-InferenceTestOptions	./InferenceTest.hpp	/^struct InferenceTestOptions$/;"	s	namespace:armnn::test
-Lerp	./MobileNetDatabase.cpp	/^inline float Lerp(float a, float b, float w)$/;"	f	namespace:__anon3
-MainImpl	./ExecuteNetwork/ExecuteNetwork.cpp	/^int MainImpl(const char* modelPath, bool isModelBinary, armnn::Compute computeDevice,$/;"	f
-MainImpl	./ExecuteNetwork_backup/ExecuteNetwork.cpp	/^int MainImpl(const char* modelPath, bool isModelBinary, armnn::Compute computeDevice,$/;"	f
-MakeInputTensors	./ExecuteNetwork/ExecuteNetwork.cpp	/^armnn::InputTensors MakeInputTensors(const std::pair<armnn::LayerBindingId,$/;"	f
-MakeInputTensors	./ExecuteNetwork/mnist_tf.cpp	/^armnn::InputTensors MakeInputTensors(const std::pair<armnn::LayerBindingId,$/;"	f
-MakeInputTensors	./InferenceModel.hpp	/^    armnn::InputTensors MakeInputTensors(const TContainer& inputTensorData)$/;"	f	class:InferenceModel
-MakeInputTensors	./InferenceModel.hpp	/^inline armnn::InputTensors MakeInputTensors(const std::pair<armnn::LayerBindingId, armnn::TensorInfo>& input,$/;"	f
-MakeOutputTensors	./ExecuteNetwork/ExecuteNetwork.cpp	/^armnn::OutputTensors MakeOutputTensors(const std::pair<armnn::LayerBindingId,$/;"	f
-MakeOutputTensors	./ExecuteNetwork/mnist_tf.cpp	/^armnn::OutputTensors MakeOutputTensors(const std::pair<armnn::LayerBindingId,$/;"	f
-MakeOutputTensors	./InferenceModel.hpp	/^    armnn::OutputTensors MakeOutputTensors(TContainer& outputTensorData)$/;"	f	class:InferenceModel
-MakeOutputTensors	./InferenceModel.hpp	/^inline armnn::OutputTensors MakeOutputTensors(const std::pair<armnn::LayerBindingId, armnn::TensorInfo>& output,$/;"	f
-MnistDatabase	./MnistDatabase.cpp	/^MnistDatabase::MnistDatabase(const std::string& binaryFileDirectory, bool scaleValues)$/;"	f	class:MnistDatabase
-MnistDatabase	./MnistDatabase.hpp	/^class MnistDatabase$/;"	c
-MnistImage	./ExecuteNetwork/mnist_loader.hpp	/^struct MnistImage$/;"	s
-MobileNetDatabase	./MobileNetDatabase.cpp	/^MobileNetDatabase::MobileNetDatabase(const std::string& binaryFileDirectory,$/;"	f	class:MobileNetDatabase
-MobileNetDatabase	./MobileNetDatabase.hpp	/^class MobileNetDatabase$/;"	c
-Motorbike	./YoloDatabase.cpp	/^    Motorbike,$/;"	m	class:__anon4::YoloVocClass	file:
-Ok	./InferenceTest.hpp	/^    Ok,$/;"	m	class:armnn::test::TestCaseResult
-OnInferenceTestFinished	./InferenceTest.hpp	/^    virtual bool OnInferenceTestFinished() { return true; };$/;"	f	class:armnn::test::IInferenceTestCaseProvider
-Params	./InferenceModel.hpp	/^        Params()$/;"	f	struct:InferenceModel::Params
-Params	./InferenceModel.hpp	/^    struct Params$/;"	s	class:InferenceModel
-ParseArray	./ExecuteNetwork/ExecuteNetwork.cpp	/^std::vector<float> ParseArray(std::istream& stream)$/;"	f
-ParseArray	./ExecuteNetwork/ExecuteNetwork.cpp	/^std::vector<unsigned int> ParseArray(std::istream& stream)$/;"	f
-ParseArray	./ExecuteNetwork_backup/ExecuteNetwork.cpp	/^std::vector<float> ParseArray(std::istream& stream)$/;"	f
-ParseArray	./ExecuteNetwork_backup/ExecuteNetwork.cpp	/^std::vector<unsigned int> ParseArray(std::istream& stream)$/;"	f
-ParseArrayImpl	./ExecuteNetwork/ExecuteNetwork.cpp	/^std::vector<T> ParseArrayImpl(std::istream& stream, TParseElementFunc parseElementFunc)$/;"	f	namespace:__anon1
-ParseArrayImpl	./ExecuteNetwork_backup/ExecuteNetwork.cpp	/^std::vector<T> ParseArrayImpl(std::istream& stream, TParseElementFunc parseElementFunc)$/;"	f	namespace:__anon5
-ParseCommandLine	./InferenceTest.cpp	/^bool ParseCommandLine(int argc, char** argv, IInferenceTestCaseProvider& testCaseProvider,$/;"	f	namespace:armnn::test
-Person	./YoloDatabase.cpp	/^    Person,$/;"	m	class:__anon4::YoloVocClass	file:
-Png	./InferenceTestImage.hpp	/^        Png,$/;"	m	class:InferenceTestImage::WriteFormat
-PottedPlant	./YoloDatabase.cpp	/^    PottedPlant,$/;"	m	class:__anon4::YoloVocClass	file:
-PrintArray	./ExecuteNetwork/ExecuteNetwork.cpp	/^void PrintArray(const std::vector<float>& v)$/;"	f
-PrintArray	./ExecuteNetwork_backup/ExecuteNetwork.cpp	/^void PrintArray(const std::vector<float>& v)$/;"	f
-ProcessCommandLineOptions	./InferenceTest.hpp	/^    virtual bool ProcessCommandLineOptions() { return true; };$/;"	f	class:armnn::test::IInferenceTestCaseProvider
-PutData	./MobileNetDatabase.cpp	/^inline void PutData(std::vector<float> & data,$/;"	f	namespace:__anon3
-R	./InferenceTestImage.hpp	/^    R,$/;"	m	class:ImageChannel
-Resize	./InferenceTestImage.cpp	/^void InferenceTestImage::Resize(unsigned int newWidth, unsigned int newHeight)$/;"	f	class:InferenceTestImage
-ResizeBilinearAndNormalize	./MobileNetDatabase.cpp	/^ResizeBilinearAndNormalize(const InferenceTestImage & image,$/;"	f	namespace:__anon3
-Rgb	./InferenceTestImage.hpp	/^    Rgb,$/;"	m	class:ImageChannelLayout
-Run	./InferenceModel.hpp	/^    void Run(const std::vector<TDataType>& input, std::vector<TDataType>& output)$/;"	f	class:InferenceModel
-STB_IMAGE_IMPLEMENTATION	./InferenceTestImage.cpp	14;"	d	file:
-STB_IMAGE_RESIZE_IMPLEMENTATION	./InferenceTestImage.cpp	17;"	d	file:
-STB_IMAGE_WRITE_IMPLEMENTATION	./InferenceTestImage.cpp	20;"	d	file:
-Sheep	./YoloDatabase.cpp	/^    Sheep,$/;"	m	class:__anon4::YoloVocClass	file:
-Sofa	./YoloDatabase.cpp	/^    Sofa,$/;"	m	class:__anon4::YoloVocClass	file:
-TestCaseResult	./InferenceTest.hpp	/^enum class TestCaseResult$/;"	c	namespace:armnn::test
-TestFrameworkException	./InferenceTest.hpp	/^class TestFrameworkException : public Exception$/;"	c	namespace:armnn::test
-Train	./YoloDatabase.cpp	/^    Train,$/;"	m	class:__anon4::YoloVocClass	file:
-UnknownImageChannelLayout	./InferenceTestImage.hpp	/^class UnknownImageChannelLayout : public InferenceTestImageException$/;"	c
-ValidateDirectory	./InferenceTest.cpp	/^bool ValidateDirectory(std::string& dir)$/;"	f	namespace:armnn::test
-Write	./InferenceTestImage.cpp	/^void InferenceTestImage::Write(WriteFormat format, const char* filePath) const$/;"	f	class:InferenceTestImage
-WriteFormat	./InferenceTestImage.hpp	/^    enum class WriteFormat$/;"	c	class:InferenceTestImage
-YoloBoundingBox	./YoloDatabase.hpp	/^struct YoloBoundingBox$/;"	s
-YoloDatabase	./YoloDatabase.cpp	/^YoloDatabase::YoloDatabase(const std::string& imageDir)$/;"	f	class:YoloDatabase
-YoloDatabase	./YoloDatabase.hpp	/^class YoloDatabase$/;"	c
-YoloDetectedObject	./YoloDatabase.hpp	/^    YoloDetectedObject(unsigned int yoloClass,$/;"	f	struct:YoloDetectedObject
-YoloDetectedObject	./YoloDatabase.hpp	/^struct YoloDetectedObject$/;"	s
-YoloImageHeight	./YoloDatabase.hpp	/^constexpr unsigned int YoloImageHeight = 448;$/;"	v
-YoloImageWidth	./YoloDatabase.hpp	/^constexpr unsigned int YoloImageWidth = 448;$/;"	v
-YoloOutputSize	./YoloInferenceTest.hpp	/^constexpr size_t YoloOutputSize = 1470;$/;"	v
-YoloTestCase	./YoloInferenceTest.hpp	/^    YoloTestCase(Model& model,$/;"	f	class:YoloTestCase
-YoloTestCase	./YoloInferenceTest.hpp	/^class YoloTestCase : public InferenceModelTestCase<Model>$/;"	c
-YoloTestCaseData	./YoloDatabase.hpp	/^    YoloTestCaseData(std::vector<float> inputImage,$/;"	f	class:YoloTestCaseData
-YoloTestCaseData	./YoloDatabase.hpp	/^class YoloTestCaseData$/;"	c
-YoloTestCaseProvider	./YoloInferenceTest.hpp	/^    YoloTestCaseProvider(TConstructModelCallable constructModel)$/;"	f	class:YoloTestCaseProvider
-YoloTestCaseProvider	./YoloInferenceTest.hpp	/^class YoloTestCaseProvider : public IInferenceTestCaseProvider$/;"	c
-YoloVocClass	./YoloDatabase.cpp	/^enum class YoloVocClass : unsigned int$/;"	c	namespace:__anon4	file:
-armnn	./InferenceTest.cpp	/^namespace armnn$/;"	n	file:
-armnn	./InferenceTest.hpp	/^namespace armnn$/;"	n
-g_DefaultImageSet	./ImageNetDatabase.cpp	/^const std::vector<ImageSet> g_DefaultImageSet =$/;"	v
-g_PerTestCaseInputOutput	./YoloDatabase.cpp	/^const std::array<YoloInputOutput,1> g_PerTestCaseInputOutput =$/;"	m	namespace:__anon4	file:
-g_kCifar10ImageByteSize	./Cifar10Database.cpp	/^constexpr unsigned int g_kCifar10ImageByteSize = 1 + 3 * 32 * 32;$/;"	v
-g_kMnistImageByteSize	./ExecuteNetwork/mnist_loader.hpp	/^constexpr int g_kMnistImageByteSize = 28 * 28;$/;"	v
-g_kMnistImageByteSize	./MnistDatabase.cpp	/^constexpr int g_kMnistImageByteSize = 28 * 28;$/;"	v
-image	./ExecuteNetwork/mnist_loader.hpp	/^    float image[g_kMnistImageByteSize];$/;"	m	struct:MnistImage
-label	./ExecuteNetwork/mnist_loader.hpp	/^    unsigned int label;$/;"	m	struct:MnistImage
-loadMnistImage	./ExecuteNetwork/mnist_loader.hpp	/^std::unique_ptr<MnistImage> loadMnistImage(std::string dataDir, int image)$/;"	f
-m_BinaryDirectory	./Cifar10Database.hpp	/^    std::string m_BinaryDirectory;$/;"	m	class:Cifar10Database
-m_BinaryDirectory	./ImageNetDatabase.hpp	/^    std::string m_BinaryDirectory;$/;"	m	class:ImageNetDatabase
-m_BinaryDirectory	./MnistDatabase.hpp	/^    std::string m_BinaryDirectory;$/;"	m	class:MnistDatabase
-m_BinaryDirectory	./MobileNetDatabase.hpp	/^    std::string m_BinaryDirectory;$/;"	m	class:MobileNetDatabase
-m_Box	./YoloDatabase.hpp	/^    YoloBoundingBox m_Box;$/;"	m	struct:YoloDetectedObject
-m_Class	./YoloDatabase.hpp	/^    unsigned int m_Class;$/;"	m	struct:YoloDetectedObject
-m_ComputeDevice	./InferenceModel.hpp	/^        armnn::Compute m_ComputeDevice;$/;"	m	struct:InferenceModel::CommandLineOptions
-m_ComputeDevice	./InferenceModel.hpp	/^        armnn::Compute m_ComputeDevice;$/;"	m	struct:InferenceModel::Params
-m_Confidence	./YoloDatabase.hpp	/^    float m_Confidence;$/;"	m	struct:YoloDetectedObject
-m_ConstructDatabase	./InferenceTest.hpp	/^    std::function<TDatabase(const char*)> m_ConstructDatabase;$/;"	m	class:armnn::test::ClassifierTestCaseProvider
-m_ConstructModel	./InferenceTest.hpp	/^    std::function<std::unique_ptr<InferenceModel>(typename InferenceModel::CommandLineOptions)> m_ConstructModel;$/;"	m	class:armnn::test::ClassifierTestCaseProvider
-m_ConstructModel	./YoloInferenceTest.hpp	/^    std::function<std::unique_ptr<Model>(typename Model::CommandLineOptions)> m_ConstructModel;$/;"	m	class:YoloTestCaseProvider
-m_Data	./InferenceTestImage.hpp	/^    std::vector<uint8_t> m_Data;$/;"	m	class:InferenceTestImage
-m_DataDir	./InferenceTest.hpp	/^    std::string m_DataDir;$/;"	m	class:armnn::test::ClassifierTestCaseProvider
-m_DataDir	./YoloInferenceTest.hpp	/^    std::string m_DataDir;$/;"	m	class:YoloTestCaseProvider
-m_Database	./InferenceTest.hpp	/^    std::unique_ptr<TDatabase> m_Database;$/;"	m	class:armnn::test::ClassifierTestCaseProvider
-m_Database	./YoloInferenceTest.hpp	/^    std::unique_ptr<YoloDatabase> m_Database;$/;"	m	class:YoloTestCaseProvider
-m_FloatComparer	./YoloInferenceTest.hpp	/^    boost::math::fpc::close_at_tolerance<float> m_FloatComparer;$/;"	m	class:YoloTestCase
-m_H	./YoloDatabase.hpp	/^    float m_H;$/;"	m	struct:YoloBoundingBox
-m_Height	./ImageNetDatabase.hpp	/^    unsigned int m_Height;$/;"	m	class:ImageNetDatabase
-m_Height	./InferenceTestImage.hpp	/^    unsigned int m_Height;$/;"	m	class:InferenceTestImage
-m_Height	./MobileNetDatabase.hpp	/^    unsigned int m_Height;$/;"	m	class:MobileNetDatabase
-m_ImageDir	./YoloDatabase.hpp	/^    std::string m_ImageDir;$/;"	m	class:YoloDatabase
-m_ImageSet	./ImageNetDatabase.hpp	/^    const std::vector<ImageSet> m_ImageSet;$/;"	m	class:ImageNetDatabase
-m_ImageSet	./MobileNetDatabase.hpp	/^    const std::vector<ImageSet> m_ImageSet;$/;"	m	class:MobileNetDatabase
-m_InferenceTimesFile	./InferenceTest.hpp	/^    std::string m_InferenceTimesFile;$/;"	m	struct:armnn::test::InferenceTestOptions
-m_Input	./InferenceTest.hpp	/^    std::vector<typename TModel::DataType> m_Input;$/;"	m	class:armnn::test::InferenceModelTestCase
-m_InputBinding	./InferenceModel.hpp	/^        std::string m_InputBinding;$/;"	m	struct:InferenceModel::Params
-m_InputBindingInfo	./InferenceModel.hpp	/^    std::pair<armnn::LayerBindingId, armnn::TensorInfo> m_InputBindingInfo;$/;"	m	class:InferenceModel
-m_InputImage	./ClassifierTestCaseData.hpp	/^    std::vector<DataType> m_InputImage;$/;"	m	class:ClassifierTestCaseData
-m_InputImage	./YoloDatabase.hpp	/^    std::vector<float> m_InputImage;$/;"	m	class:YoloTestCaseData
-m_InputTensorShape	./InferenceModel.hpp	/^        const armnn::TensorShape* m_InputTensorShape;$/;"	m	struct:InferenceModel::Params
-m_IsModelBinary	./InferenceModel.hpp	/^        bool m_IsModelBinary;$/;"	m	struct:InferenceModel::Params
-m_IterationCount	./InferenceTest.hpp	/^    unsigned int m_IterationCount;$/;"	m	struct:armnn::test::InferenceTestOptions
-m_Label	./ClassifierTestCaseData.hpp	/^    const unsigned int m_Label;$/;"	m	class:ClassifierTestCaseData
-m_Label	./InferenceTest.hpp	/^    unsigned int m_Label;$/;"	m	class:armnn::test::ClassifierTestCase
-m_MeanBgr	./ImageNetDatabase.hpp	/^    const std::array<float, 3> m_MeanBgr = {{104.007965f, 116.669472f, 122.675102f}};$/;"	m	class:ImageNetDatabase
-m_Model	./InferenceTest.hpp	/^    TModel& m_Model;$/;"	m	class:armnn::test::InferenceModelTestCase
-m_Model	./InferenceTest.hpp	/^    std::unique_ptr<InferenceModel> m_Model;$/;"	m	class:armnn::test::ClassifierTestCaseProvider
-m_Model	./YoloInferenceTest.hpp	/^    std::unique_ptr<Model> m_Model;$/;"	m	class:YoloTestCaseProvider
-m_ModelCommandLineOptions	./InferenceTest.hpp	/^    typename InferenceModel::CommandLineOptions m_ModelCommandLineOptions;$/;"	m	class:armnn::test::ClassifierTestCaseProvider
-m_ModelCommandLineOptions	./YoloInferenceTest.hpp	/^    typename Model::CommandLineOptions m_ModelCommandLineOptions;$/;"	m	class:YoloTestCaseProvider
-m_ModelDir	./InferenceModel.hpp	/^        std::string m_ModelDir;$/;"	m	struct:InferenceModel::CommandLineOptions
-m_ModelPath	./InferenceModel.hpp	/^        std::string m_ModelPath;$/;"	m	struct:InferenceModel::Params
-m_NetworkIdentifier	./InferenceModel.hpp	/^    armnn::NetworkId m_NetworkIdentifier;$/;"	m	class:InferenceModel
-m_NumChannels	./InferenceTestImage.hpp	/^    unsigned int m_NumChannels;$/;"	m	class:InferenceTestImage
-m_NumCorrectInferences	./InferenceTest.hpp	/^    int m_NumCorrectInferences; \/\/ Referenced by test cases$/;"	m	class:armnn::test::ClassifierTestCaseProvider
-m_NumCorrectInferencesRef	./InferenceTest.hpp	/^    int& m_NumCorrectInferencesRef;$/;"	m	class:armnn::test::ClassifierTestCase
-m_NumInferences	./InferenceTest.hpp	/^    int m_NumInferences; \/\/ Referenced by test cases$/;"	m	class:armnn::test::ClassifierTestCaseProvider
-m_NumInferencesRef	./InferenceTest.hpp	/^    int& m_NumInferencesRef;$/;"	m	class:armnn::test::ClassifierTestCase
-m_Output	./InferenceTest.hpp	/^    std::vector<typename TModel::DataType> m_Output;$/;"	m	class:armnn::test::InferenceModelTestCase
-m_OutputBinding	./InferenceModel.hpp	/^        std::string m_OutputBinding;$/;"	m	struct:InferenceModel::Params
-m_OutputBindingInfo	./InferenceModel.hpp	/^    std::pair<armnn::LayerBindingId, armnn::TensorInfo> m_OutputBindingInfo;$/;"	m	class:InferenceModel
-m_RgbPack	./Cifar10Database.hpp	/^    bool m_RgbPack;$/;"	m	class:Cifar10Database
-m_Runtime	./InferenceModel.hpp	/^    armnn::IRuntimePtr m_Runtime;$/;"	m	class:InferenceModel
-m_ScaleValues	./MnistDatabase.hpp	/^    bool m_ScaleValues;$/;"	m	class:MnistDatabase
-m_TestCaseId	./InferenceTest.hpp	/^    unsigned int m_TestCaseId;$/;"	m	class:armnn::test::InferenceModelTestCase
-m_TopObjectDetections	./YoloDatabase.hpp	/^    std::vector<YoloDetectedObject> m_TopObjectDetections;$/;"	m	class:YoloTestCaseData
-m_TopObjectDetections	./YoloInferenceTest.hpp	/^    std::vector<YoloDetectedObject> m_TopObjectDetections;$/;"	m	class:YoloTestCase
-m_ValidationFileIn	./InferenceTest.hpp	/^    std::string m_ValidationFileIn;$/;"	m	class:armnn::test::ClassifierTestCaseProvider
-m_ValidationFileOut	./InferenceTest.hpp	/^    std::string m_ValidationFileOut;$/;"	m	class:armnn::test::ClassifierTestCaseProvider
-m_ValidationPredictions	./InferenceTest.hpp	/^    const std::vector<unsigned int>& m_ValidationPredictions;$/;"	m	class:armnn::test::ClassifierTestCase
-m_ValidationPredictions	./InferenceTest.hpp	/^    std::vector<unsigned int> m_ValidationPredictions; \/\/ Referenced by test cases$/;"	m	class:armnn::test::ClassifierTestCaseProvider
-m_ValidationPredictionsOut	./InferenceTest.hpp	/^    std::vector<unsigned int> m_ValidationPredictionsOut; \/\/ Referenced by test cases$/;"	m	class:armnn::test::ClassifierTestCaseProvider
-m_ValidationPredictionsOut	./InferenceTest.hpp	/^    std::vector<unsigned int>* m_ValidationPredictionsOut;$/;"	m	class:armnn::test::ClassifierTestCase
-m_VisualizePostOptimizationModel	./InferenceModel.hpp	/^        bool m_VisualizePostOptimizationModel;$/;"	m	struct:InferenceModel::CommandLineOptions
-m_VisualizePostOptimizationModel	./InferenceModel.hpp	/^        bool m_VisualizePostOptimizationModel;$/;"	m	struct:InferenceModel::Params
-m_W	./YoloDatabase.hpp	/^    float m_W;$/;"	m	struct:YoloBoundingBox
-m_Width	./ImageNetDatabase.hpp	/^    unsigned int m_Width;$/;"	m	class:ImageNetDatabase
-m_Width	./InferenceTestImage.hpp	/^    unsigned int m_Width;$/;"	m	class:InferenceTestImage
-m_Width	./MobileNetDatabase.hpp	/^    unsigned int m_Width;$/;"	m	class:MobileNetDatabase
-m_X	./YoloDatabase.hpp	/^    float m_X;$/;"	m	struct:YoloBoundingBox
-m_Y	./YoloDatabase.hpp	/^    float m_Y;$/;"	m	struct:YoloBoundingBox
-main	./CaffeAlexNet-Armnn/CaffeAlexNet-Armnn.cpp	/^int main(int argc, char* argv[])$/;"	f
-main	./CaffeCifar10AcrossChannels-Armnn/CaffeCifar10AcrossChannels-Armnn.cpp	/^int main(int argc, char* argv[])$/;"	f
-main	./CaffeInception_BN-Armnn/CaffeInception_BN-Armnn.cpp	/^int main(int argc, char* argv[])$/;"	f
-main	./CaffeMnist-Armnn/CaffeMnist-Armnn.cpp	/^int main(int argc, char* argv[])$/;"	f
-main	./CaffeResNet-Armnn/CaffeResNet-Armnn.cpp	/^int main(int argc, char* argv[])$/;"	f
-main	./CaffeSqueezeNet1_0-Armnn/CaffeSqueezeNet1_0-Armnn.cpp	/^int main(int argc, char* argv[])$/;"	f
-main	./CaffeVGG-Armnn/CaffeVGG-Armnn.cpp	/^int main(int argc, char* argv[])$/;"	f
-main	./CaffeYolo-Armnn/CaffeYolo-Armnn.cpp	/^int main(int argc, char* argv[])$/;"	f
-main	./ExecuteNetwork/ExecuteNetwork.cpp	/^int main(int argc, char* argv[])$/;"	f
-main	./ExecuteNetwork/mnist_tf.cpp	/^int main(int argc, char** argv)$/;"	f
-main	./ExecuteNetwork_backup/ExecuteNetwork.cpp	/^int main(int argc, char* argv[])$/;"	f
-main	./MultipleNetworksCifar10/MultipleNetworksCifar10.cpp	/^int main(int argc, char* argv[])$/;"	f
-main	./TfCifar10-Armnn/TfCifar10-Armnn.cpp	/^int main(int argc, char* argv[])$/;"	f
-main	./TfInceptionV3-Armnn/TfInceptionV3-Armnn.cpp	/^int main(int argc, char* argv[])$/;"	f
-main	./TfMnist-Armnn/TfMnist-Armnn.cpp	/^int main(int argc, char* argv[])$/;"	f
-main	./TfMobileNet-Armnn/TfMobileNet-Armnn.cpp	/^int main(int argc, char* argv[])$/;"	f
-main	./TfResNext_Quantized-Armnn/TfResNext_Quantized-Armnn.cpp	/^int main(int argc, char* argv[])$/;"	f
-operator >>	./InferenceTest.hpp	/^inline std::istream& operator>>(std::istream& in, armnn::Compute& compute)$/;"	f	namespace:armnn
-override	./InferenceTest.hpp	/^    virtual TestCaseResult ProcessResult(const InferenceTestOptions& params) override;$/;"	m	class:armnn::test::ClassifierTestCase
-override	./InferenceTest.hpp	/^    virtual bool OnInferenceTestFinished() override;$/;"	m	class:armnn::test::ClassifierTestCaseProvider
-override	./InferenceTest.hpp	/^    virtual bool ProcessCommandLineOptions() override;$/;"	m	class:armnn::test::ClassifierTestCaseProvider
-override	./InferenceTest.hpp	/^    virtual std::unique_ptr<IInferenceTestCase> GetTestCase(unsigned int testCaseId) override;$/;"	m	class:armnn::test::ClassifierTestCaseProvider
-override	./InferenceTest.hpp	/^    virtual void AddCommandLineOptions(boost::program_options::options_description& options) override;$/;"	m	class:armnn::test::ClassifierTestCaseProvider
-test	./InferenceTest.cpp	/^namespace test$/;"	n	namespace:armnn	file:
-test	./InferenceTest.hpp	/^namespace test$/;"	n	namespace:armnn
-~IInferenceTestCase	./InferenceTest.hpp	/^    virtual ~IInferenceTestCase() {}$/;"	f	class:armnn::test::IInferenceTestCase
-~IInferenceTestCaseProvider	./InferenceTest.hpp	/^    virtual ~IInferenceTestCaseProvider() {}$/;"	f	class:armnn::test::IInferenceTestCaseProvider
+AddCommandLineOptions	InferenceModel.hpp	/^    static void AddCommandLineOptions(boost::program_options::options_description& desc, CommandLineOptions& options)$/;"	f	class:InferenceModel
+AddCommandLineOptions	InferenceTest.hpp	/^    virtual void AddCommandLineOptions(boost::program_options::options_description& options) {};$/;"	f	class:armnn::test::IInferenceTestCaseProvider
+Aeroplane	YoloDatabase.cpp	/^    Aeroplane,$/;"	m	class:__anon4::YoloVocClass	file:
+Bicycle	YoloDatabase.cpp	/^    Bicycle,$/;"	m	class:__anon4::YoloVocClass	file:
+Bird	YoloDatabase.cpp	/^    Bird,$/;"	m	class:__anon4::YoloVocClass	file:
+Bmp	InferenceTestImage.hpp	/^        Bmp,$/;"	m	class:InferenceTestImage::WriteFormat
+Boat	YoloDatabase.cpp	/^    Boat,$/;"	m	class:__anon4::YoloVocClass	file:
+Bottle	YoloDatabase.cpp	/^    Bottle,$/;"	m	class:__anon4::YoloVocClass	file:
+Bus	YoloDatabase.cpp	/^    Bus,$/;"	m	class:__anon4::YoloVocClass	file:
+Car	YoloDatabase.cpp	/^    Car,$/;"	m	class:__anon4::YoloVocClass	file:
+Cat	YoloDatabase.cpp	/^    Cat,$/;"	m	class:__anon4::YoloVocClass	file:
+Chair	YoloDatabase.cpp	/^    Chair,$/;"	m	class:__anon4::YoloVocClass	file:
+Cifar10Database	Cifar10Database.cpp	/^Cifar10Database::Cifar10Database(const std::string& binaryFileDirectory, bool rgbPack)$/;"	f	class:Cifar10Database
+Cifar10Database	Cifar10Database.hpp	/^class Cifar10Database$/;"	c
+ClassifierTestCase	InferenceTest.hpp	/^class ClassifierTestCase : public InferenceModelTestCase<TModel>$/;"	c	namespace:armnn::test
+ClassifierTestCaseData	ClassifierTestCaseData.hpp	/^    ClassifierTestCaseData(unsigned int label, std::vector<DataType> inputImage)$/;"	f	class:ClassifierTestCaseData
+ClassifierTestCaseData	ClassifierTestCaseData.hpp	/^class ClassifierTestCaseData$/;"	c
+ClassifierTestCaseProvider	InferenceTest.hpp	/^class ClassifierTestCaseProvider : public IInferenceTestCaseProvider$/;"	c	namespace:armnn::test
+CommandLineOptions	InferenceModel.hpp	/^    struct CommandLineOptions$/;"	s	class:InferenceModel
+Cow	YoloDatabase.cpp	/^    Cow,$/;"	m	class:__anon4::YoloVocClass	file:
+DiningTable	YoloDatabase.cpp	/^    DiningTable,$/;"	m	class:__anon4::YoloVocClass	file:
+Dog	YoloDatabase.cpp	/^    Dog,$/;"	m	class:__anon4::YoloVocClass	file:
+EndianSwap	ExecuteNetwork_TfMobilenet/mnist_loader.hpp	/^void EndianSwap(unsigned int &x)$/;"	f
+EndianSwap	MnistDatabase.cpp	/^void EndianSwap(unsigned int &x)$/;"	f
+Failed	InferenceTest.hpp	/^    Failed,$/;"	m	class:armnn::test::TestCaseResult
+G	InferenceTestImage.hpp	/^    G,$/;"	m	class:ImageChannel
+GetHeight	InferenceTestImage.hpp	/^    unsigned int GetHeight() const { return m_Height; }$/;"	f	class:InferenceTestImage
+GetImageChannelIndex	InferenceTestImage.cpp	/^unsigned int GetImageChannelIndex(ImageChannelLayout channelLayout, ImageChannel channel)$/;"	f	namespace:__anon2
+GetImageDataAsNormalizedFloats	InferenceTestImage.cpp	/^std::vector<float> GetImageDataAsNormalizedFloats(ImageChannelLayout layout,$/;"	f
+GetImageDataInArmNnLayoutAsFloats	InferenceTestImage.cpp	/^std::vector<float> GetImageDataInArmNnLayoutAsFloats(ImageChannelLayout channelLayout,$/;"	f
+GetImageDataInArmNnLayoutAsFloatsSubtractingMean	InferenceTestImage.cpp	/^std::vector<float> GetImageDataInArmNnLayoutAsFloatsSubtractingMean(ImageChannelLayout layout,$/;"	f
+GetImageDataInArmNnLayoutAsNormalizedFloats	InferenceTestImage.cpp	/^std::vector<float> GetImageDataInArmNnLayoutAsNormalizedFloats(ImageChannelLayout layout,$/;"	f
+GetNumChannels	InferenceTestImage.hpp	/^    unsigned int GetNumChannels() const { return m_NumChannels; }$/;"	f	class:InferenceTestImage
+GetNumElements	InferenceTestImage.hpp	/^    unsigned int GetNumElements() const { return GetWidth() * GetHeight() * GetNumChannels(); }$/;"	f	class:InferenceTestImage
+GetNumImageBytes	ImageNetDatabase.hpp	/^    unsigned int GetNumImageBytes() const { return 4 * GetNumImageElements(); }$/;"	f	class:ImageNetDatabase
+GetNumImageBytes	MobileNetDatabase.hpp	/^    unsigned int GetNumImageBytes() const { return 4 * GetNumImageElements(); }$/;"	f	class:MobileNetDatabase
+GetNumImageElements	ImageNetDatabase.hpp	/^    unsigned int GetNumImageElements() const { return 3 * m_Width * m_Height; }$/;"	f	class:ImageNetDatabase
+GetNumImageElements	MobileNetDatabase.hpp	/^    unsigned int GetNumImageElements() const { return 3 * m_Width * m_Height; }$/;"	f	class:MobileNetDatabase
+GetOutput	InferenceTest.hpp	/^    const std::vector<typename TModel::DataType>& GetOutput() const { return m_Output; }$/;"	f	class:armnn::test::InferenceModelTestCase
+GetOutputSize	InferenceModel.hpp	/^    unsigned int GetOutputSize() const$/;"	f	class:InferenceModel
+GetPixelAs3Channels	InferenceTestImage.cpp	/^std::tuple<uint8_t, uint8_t, uint8_t> InferenceTestImage::GetPixelAs3Channels(unsigned int x, unsigned int y) const$/;"	f	class:InferenceTestImage
+GetSingleElementSizeInBytes	InferenceTestImage.hpp	/^    static unsigned int GetSingleElementSizeInBytes()$/;"	f	class:InferenceTestImage
+GetSizeInBytes	InferenceTestImage.hpp	/^    unsigned int GetSizeInBytes() const { return GetNumElements() * GetSingleElementSizeInBytes(); }$/;"	f	class:InferenceTestImage
+GetTestCaseData	Cifar10Database.cpp	/^std::unique_ptr<Cifar10Database::TTestCaseData> Cifar10Database::GetTestCaseData(unsigned int testCaseId)$/;"	f	class:Cifar10Database
+GetTestCaseData	ImageNetDatabase.cpp	/^std::unique_ptr<ImageNetDatabase::TTestCaseData> ImageNetDatabase::GetTestCaseData(unsigned int testCaseId)$/;"	f	class:ImageNetDatabase
+GetTestCaseData	MnistDatabase.cpp	/^std::unique_ptr<MnistDatabase::TTestCaseData> MnistDatabase::GetTestCaseData(unsigned int testCaseId)$/;"	f	class:MnistDatabase
+GetTestCaseData	MobileNetDatabase.cpp	/^MobileNetDatabase::GetTestCaseData(unsigned int testCaseId)$/;"	f	class:MobileNetDatabase
+GetTestCaseData	YoloDatabase.cpp	/^std::unique_ptr<YoloDatabase::TTestCaseData> YoloDatabase::GetTestCaseData(unsigned int testCaseId)$/;"	f	class:YoloDatabase
+GetTestCaseId	InferenceTest.hpp	/^    unsigned int GetTestCaseId() const { return m_TestCaseId; }$/;"	f	class:armnn::test::InferenceModelTestCase
+GetWidth	InferenceTestImage.hpp	/^    unsigned int GetWidth() const { return m_Width; }$/;"	f	class:InferenceTestImage
+Horse	YoloDatabase.cpp	/^    Horse,$/;"	m	class:__anon4::YoloVocClass	file:
+IInferenceTestCase	InferenceTest.hpp	/^class IInferenceTestCase$/;"	c	namespace:armnn::test
+IInferenceTestCaseProvider	InferenceTest.hpp	/^class IInferenceTestCaseProvider$/;"	c	namespace:armnn::test
+ImageChannel	InferenceTestImage.hpp	/^enum class ImageChannel$/;"	c
+ImageChannelLayout	InferenceTestImage.hpp	/^enum class ImageChannelLayout$/;"	c
+ImageNetDatabase	ImageNetDatabase.cpp	/^ImageNetDatabase::ImageNetDatabase(const std::string& binaryFileDirectory, unsigned int width, unsigned int height,$/;"	f	class:ImageNetDatabase
+ImageNetDatabase	ImageNetDatabase.hpp	/^class ImageNetDatabase$/;"	c
+ImageNotFoundException	YoloDatabase.cpp	/^class ImageNotFoundException : public armnn::Exception$/;"	c	namespace:__anon4	file:
+InferenceModel	InferenceModel.hpp	/^    InferenceModel(const Params& params)$/;"	f	class:InferenceModel
+InferenceModel	InferenceModel.hpp	/^class InferenceModel$/;"	c
+InferenceModelTestCase	InferenceTest.hpp	/^    InferenceModelTestCase(TModel& model,$/;"	f	class:armnn::test::InferenceModelTestCase
+InferenceModelTestCase	InferenceTest.hpp	/^class InferenceModelTestCase : public IInferenceTestCase$/;"	c	namespace:armnn::test
+InferenceTest	InferenceTest.cpp	/^bool InferenceTest(const InferenceTestOptions& params,$/;"	f	namespace:armnn::test
+InferenceTestImage	InferenceTestImage.cpp	/^InferenceTestImage::InferenceTestImage(char const* filePath)$/;"	f	class:InferenceTestImage
+InferenceTestImage	InferenceTestImage.hpp	/^class InferenceTestImage$/;"	c
+InferenceTestImageException	InferenceTestImage.hpp	/^class InferenceTestImageException : public armnn::Exception$/;"	c
+InferenceTestImageLoadFailed	InferenceTestImage.hpp	/^class InferenceTestImageLoadFailed : public InferenceTestImageException$/;"	c
+InferenceTestImageOutOfBoundsAccess	InferenceTestImage.hpp	/^class InferenceTestImageOutOfBoundsAccess : public InferenceTestImageException$/;"	c
+InferenceTestImageResizeFailed	InferenceTestImage.hpp	/^class InferenceTestImageResizeFailed : public InferenceTestImageException$/;"	c
+InferenceTestImageWriteFailed	InferenceTestImage.hpp	/^class InferenceTestImageWriteFailed : public InferenceTestImageException$/;"	c
+InferenceTestOptions	InferenceTest.hpp	/^    InferenceTestOptions()$/;"	f	struct:armnn::test::InferenceTestOptions
+InferenceTestOptions	InferenceTest.hpp	/^struct InferenceTestOptions$/;"	s	namespace:armnn::test
+Lerp	ExecuteNetwork_TfMobilenet/ExecuteNetwork.cpp	/^inline float Lerp(float a, float b, float w)$/;"	f	namespace:__anon7
+Lerp	MobileNetDatabase.cpp	/^inline float Lerp(float a, float b, float w)$/;"	f	namespace:__anon3
+MainImpl	ExecuteNetwork/ExecuteNetwork.cpp	/^int MainImpl(const char* modelPath, bool isModelBinary, armnn::Compute computeDevice,$/;"	f
+MainImpl	ExecuteNetwork_TfMobilenet/ExecuteNetwork.cpp	/^int MainImpl(const char* modelPath, bool isModelBinary, armnn::Compute computeDevice,$/;"	f
+MainImpl	ExecuteNetwork_backup/ExecuteNetwork.cpp	/^int MainImpl(const char* modelPath, bool isModelBinary, armnn::Compute computeDevice,$/;"	f
+MakeInputTensors	ExecuteNetwork_TfMobilenet/ExecuteNetwork.cpp	/^armnn::InputTensors MakeInputTensors(const std::pair<armnn::LayerBindingId,$/;"	f
+MakeInputTensors	ExecuteNetwork_TfMobilenet/mnist_tf.cpp	/^armnn::InputTensors MakeInputTensors(const std::pair<armnn::LayerBindingId,$/;"	f
+MakeInputTensors	InferenceModel.hpp	/^    armnn::InputTensors MakeInputTensors(const TContainer& inputTensorData)$/;"	f	class:InferenceModel
+MakeInputTensors	InferenceModel.hpp	/^inline armnn::InputTensors MakeInputTensors(const std::pair<armnn::LayerBindingId, armnn::TensorInfo>& input,$/;"	f
+MakeOutputTensors	ExecuteNetwork_TfMobilenet/ExecuteNetwork.cpp	/^armnn::OutputTensors MakeOutputTensors(const std::pair<armnn::LayerBindingId,$/;"	f
+MakeOutputTensors	ExecuteNetwork_TfMobilenet/mnist_tf.cpp	/^armnn::OutputTensors MakeOutputTensors(const std::pair<armnn::LayerBindingId,$/;"	f
+MakeOutputTensors	InferenceModel.hpp	/^    armnn::OutputTensors MakeOutputTensors(TContainer& outputTensorData)$/;"	f	class:InferenceModel
+MakeOutputTensors	InferenceModel.hpp	/^inline armnn::OutputTensors MakeOutputTensors(const std::pair<armnn::LayerBindingId, armnn::TensorInfo>& output,$/;"	f
+MnistDatabase	MnistDatabase.cpp	/^MnistDatabase::MnistDatabase(const std::string& binaryFileDirectory, bool scaleValues)$/;"	f	class:MnistDatabase
+MnistDatabase	MnistDatabase.hpp	/^class MnistDatabase$/;"	c
+MnistImage	ExecuteNetwork_TfMobilenet/mnist_loader.hpp	/^struct MnistImage$/;"	s
+MobileNetDatabase	MobileNetDatabase.cpp	/^MobileNetDatabase::MobileNetDatabase(const std::string& binaryFileDirectory,$/;"	f	class:MobileNetDatabase
+MobileNetDatabase	MobileNetDatabase.hpp	/^class MobileNetDatabase$/;"	c
+Motorbike	YoloDatabase.cpp	/^    Motorbike,$/;"	m	class:__anon4::YoloVocClass	file:
+Ok	InferenceTest.hpp	/^    Ok,$/;"	m	class:armnn::test::TestCaseResult
+OnInferenceTestFinished	InferenceTest.hpp	/^    virtual bool OnInferenceTestFinished() { return true; };$/;"	f	class:armnn::test::IInferenceTestCaseProvider
+Params	InferenceModel.hpp	/^        Params()$/;"	f	struct:InferenceModel::Params
+Params	InferenceModel.hpp	/^    struct Params$/;"	s	class:InferenceModel
+ParseArray	ExecuteNetwork/ExecuteNetwork.cpp	/^std::vector<float> ParseArray(std::istream& stream)$/;"	f
+ParseArray	ExecuteNetwork/ExecuteNetwork.cpp	/^std::vector<unsigned int> ParseArray(std::istream& stream)$/;"	f
+ParseArray	ExecuteNetwork_TfMobilenet/ExecuteNetwork.cpp	/^std::vector<float> ParseArray(std::istream& stream)$/;"	f
+ParseArray	ExecuteNetwork_TfMobilenet/ExecuteNetwork.cpp	/^std::vector<unsigned int> ParseArray(std::istream& stream)$/;"	f
+ParseArray	ExecuteNetwork_backup/ExecuteNetwork.cpp	/^std::vector<float> ParseArray(std::istream& stream)$/;"	f
+ParseArray	ExecuteNetwork_backup/ExecuteNetwork.cpp	/^std::vector<unsigned int> ParseArray(std::istream& stream)$/;"	f
+ParseArrayImpl	ExecuteNetwork/ExecuteNetwork.cpp	/^std::vector<T> ParseArrayImpl(std::istream& stream, TParseElementFunc parseElementFunc)$/;"	f	namespace:__anon1
+ParseArrayImpl	ExecuteNetwork_TfMobilenet/ExecuteNetwork.cpp	/^std::vector<T> ParseArrayImpl(std::istream& stream, TParseElementFunc parseElementFunc)$/;"	f	namespace:__anon6
+ParseArrayImpl	ExecuteNetwork_backup/ExecuteNetwork.cpp	/^std::vector<T> ParseArrayImpl(std::istream& stream, TParseElementFunc parseElementFunc)$/;"	f	namespace:__anon5
+ParseCommandLine	InferenceTest.cpp	/^bool ParseCommandLine(int argc, char** argv, IInferenceTestCaseProvider& testCaseProvider,$/;"	f	namespace:armnn::test
+Person	YoloDatabase.cpp	/^    Person,$/;"	m	class:__anon4::YoloVocClass	file:
+Png	InferenceTestImage.hpp	/^        Png,$/;"	m	class:InferenceTestImage::WriteFormat
+PottedPlant	YoloDatabase.cpp	/^    PottedPlant,$/;"	m	class:__anon4::YoloVocClass	file:
+PrintArray	ExecuteNetwork/ExecuteNetwork.cpp	/^void PrintArray(const std::vector<float>& v)$/;"	f
+PrintArray	ExecuteNetwork_TfMobilenet/ExecuteNetwork.cpp	/^void PrintArray(const std::vector<float>& v)$/;"	f
+PrintArray	ExecuteNetwork_backup/ExecuteNetwork.cpp	/^void PrintArray(const std::vector<float>& v)$/;"	f
+ProcessCommandLineOptions	InferenceTest.hpp	/^    virtual bool ProcessCommandLineOptions() { return true; };$/;"	f	class:armnn::test::IInferenceTestCaseProvider
+PutData	ExecuteNetwork_TfMobilenet/ExecuteNetwork.cpp	/^inline void PutData(std::vector<float> & data,$/;"	f	namespace:__anon7
+PutData	MobileNetDatabase.cpp	/^inline void PutData(std::vector<float> & data,$/;"	f	namespace:__anon3
+R	InferenceTestImage.hpp	/^    R,$/;"	m	class:ImageChannel
+Resize	InferenceTestImage.cpp	/^void InferenceTestImage::Resize(unsigned int newWidth, unsigned int newHeight)$/;"	f	class:InferenceTestImage
+ResizeBilinearAndNormalize	ExecuteNetwork_TfMobilenet/ExecuteNetwork.cpp	/^ResizeBilinearAndNormalize(const InferenceTestImage & image,$/;"	f	namespace:__anon7
+ResizeBilinearAndNormalize	MobileNetDatabase.cpp	/^ResizeBilinearAndNormalize(const InferenceTestImage & image,$/;"	f	namespace:__anon3
+Rgb	InferenceTestImage.hpp	/^    Rgb,$/;"	m	class:ImageChannelLayout
+Run	InferenceModel.hpp	/^    void Run(const std::vector<TDataType>& input, std::vector<TDataType>& output)$/;"	f	class:InferenceModel
+STB_IMAGE_IMPLEMENTATION	InferenceTestImage.cpp	14;"	d	file:
+STB_IMAGE_RESIZE_IMPLEMENTATION	InferenceTestImage.cpp	17;"	d	file:
+STB_IMAGE_WRITE_IMPLEMENTATION	InferenceTestImage.cpp	20;"	d	file:
+Sheep	YoloDatabase.cpp	/^    Sheep,$/;"	m	class:__anon4::YoloVocClass	file:
+Sofa	YoloDatabase.cpp	/^    Sofa,$/;"	m	class:__anon4::YoloVocClass	file:
+TestCaseResult	InferenceTest.hpp	/^enum class TestCaseResult$/;"	c	namespace:armnn::test
+TestFrameworkException	InferenceTest.hpp	/^class TestFrameworkException : public Exception$/;"	c	namespace:armnn::test
+Train	YoloDatabase.cpp	/^    Train,$/;"	m	class:__anon4::YoloVocClass	file:
+UnknownImageChannelLayout	InferenceTestImage.hpp	/^class UnknownImageChannelLayout : public InferenceTestImageException$/;"	c
+ValidateDirectory	InferenceTest.cpp	/^bool ValidateDirectory(std::string& dir)$/;"	f	namespace:armnn::test
+Write	InferenceTestImage.cpp	/^void InferenceTestImage::Write(WriteFormat format, const char* filePath) const$/;"	f	class:InferenceTestImage
+WriteFormat	InferenceTestImage.hpp	/^    enum class WriteFormat$/;"	c	class:InferenceTestImage
+YoloBoundingBox	YoloDatabase.hpp	/^struct YoloBoundingBox$/;"	s
+YoloDatabase	YoloDatabase.cpp	/^YoloDatabase::YoloDatabase(const std::string& imageDir)$/;"	f	class:YoloDatabase
+YoloDatabase	YoloDatabase.hpp	/^class YoloDatabase$/;"	c
+YoloDetectedObject	YoloDatabase.hpp	/^    YoloDetectedObject(unsigned int yoloClass,$/;"	f	struct:YoloDetectedObject
+YoloDetectedObject	YoloDatabase.hpp	/^struct YoloDetectedObject$/;"	s
+YoloImageHeight	YoloDatabase.hpp	/^constexpr unsigned int YoloImageHeight = 448;$/;"	v
+YoloImageWidth	YoloDatabase.hpp	/^constexpr unsigned int YoloImageWidth = 448;$/;"	v
+YoloOutputSize	YoloInferenceTest.hpp	/^constexpr size_t YoloOutputSize = 1470;$/;"	v
+YoloTestCase	YoloInferenceTest.hpp	/^    YoloTestCase(Model& model,$/;"	f	class:YoloTestCase
+YoloTestCase	YoloInferenceTest.hpp	/^class YoloTestCase : public InferenceModelTestCase<Model>$/;"	c
+YoloTestCaseData	YoloDatabase.hpp	/^    YoloTestCaseData(std::vector<float> inputImage,$/;"	f	class:YoloTestCaseData
+YoloTestCaseData	YoloDatabase.hpp	/^class YoloTestCaseData$/;"	c
+YoloTestCaseProvider	YoloInferenceTest.hpp	/^    YoloTestCaseProvider(TConstructModelCallable constructModel)$/;"	f	class:YoloTestCaseProvider
+YoloTestCaseProvider	YoloInferenceTest.hpp	/^class YoloTestCaseProvider : public IInferenceTestCaseProvider$/;"	c
+YoloVocClass	YoloDatabase.cpp	/^enum class YoloVocClass : unsigned int$/;"	c	namespace:__anon4	file:
+armnn	InferenceTest.cpp	/^namespace armnn$/;"	n	file:
+armnn	InferenceTest.hpp	/^namespace armnn$/;"	n
+g_DefaultImageSet	ImageNetDatabase.cpp	/^const std::vector<ImageSet> g_DefaultImageSet =$/;"	v
+g_PerTestCaseInputOutput	YoloDatabase.cpp	/^const std::array<YoloInputOutput,1> g_PerTestCaseInputOutput =$/;"	m	namespace:__anon4	file:
+g_kCifar10ImageByteSize	Cifar10Database.cpp	/^constexpr unsigned int g_kCifar10ImageByteSize = 1 + 3 * 32 * 32;$/;"	v
+g_kMnistImageByteSize	ExecuteNetwork_TfMobilenet/mnist_loader.hpp	/^constexpr int g_kMnistImageByteSize = 28 * 28;$/;"	v
+g_kMnistImageByteSize	MnistDatabase.cpp	/^constexpr int g_kMnistImageByteSize = 28 * 28;$/;"	v
+image	ExecuteNetwork_TfMobilenet/mnist_loader.hpp	/^    float image[g_kMnistImageByteSize];$/;"	m	struct:MnistImage
+label	ExecuteNetwork_TfMobilenet/mnist_loader.hpp	/^    unsigned int label;$/;"	m	struct:MnistImage
+loadMnistImage	ExecuteNetwork_TfMobilenet/mnist_loader.hpp	/^std::unique_ptr<MnistImage> loadMnistImage(std::string dataDir, int image)$/;"	f
+m_BinaryDirectory	Cifar10Database.hpp	/^    std::string m_BinaryDirectory;$/;"	m	class:Cifar10Database
+m_BinaryDirectory	ImageNetDatabase.hpp	/^    std::string m_BinaryDirectory;$/;"	m	class:ImageNetDatabase
+m_BinaryDirectory	MnistDatabase.hpp	/^    std::string m_BinaryDirectory;$/;"	m	class:MnistDatabase
+m_BinaryDirectory	MobileNetDatabase.hpp	/^    std::string m_BinaryDirectory;$/;"	m	class:MobileNetDatabase
+m_Box	YoloDatabase.hpp	/^    YoloBoundingBox m_Box;$/;"	m	struct:YoloDetectedObject
+m_Class	YoloDatabase.hpp	/^    unsigned int m_Class;$/;"	m	struct:YoloDetectedObject
+m_ComputeDevice	InferenceModel.hpp	/^        armnn::Compute m_ComputeDevice;$/;"	m	struct:InferenceModel::CommandLineOptions
+m_ComputeDevice	InferenceModel.hpp	/^        armnn::Compute m_ComputeDevice;$/;"	m	struct:InferenceModel::Params
+m_Confidence	YoloDatabase.hpp	/^    float m_Confidence;$/;"	m	struct:YoloDetectedObject
+m_ConstructDatabase	InferenceTest.hpp	/^    std::function<TDatabase(const char*)> m_ConstructDatabase;$/;"	m	class:armnn::test::ClassifierTestCaseProvider
+m_ConstructModel	InferenceTest.hpp	/^    std::function<std::unique_ptr<InferenceModel>(typename InferenceModel::CommandLineOptions)> m_ConstructModel;$/;"	m	class:armnn::test::ClassifierTestCaseProvider
+m_ConstructModel	YoloInferenceTest.hpp	/^    std::function<std::unique_ptr<Model>(typename Model::CommandLineOptions)> m_ConstructModel;$/;"	m	class:YoloTestCaseProvider
+m_Data	InferenceTestImage.hpp	/^    std::vector<uint8_t> m_Data;$/;"	m	class:InferenceTestImage
+m_DataDir	InferenceTest.hpp	/^    std::string m_DataDir;$/;"	m	class:armnn::test::ClassifierTestCaseProvider
+m_DataDir	YoloInferenceTest.hpp	/^    std::string m_DataDir;$/;"	m	class:YoloTestCaseProvider
+m_Database	InferenceTest.hpp	/^    std::unique_ptr<TDatabase> m_Database;$/;"	m	class:armnn::test::ClassifierTestCaseProvider
+m_Database	YoloInferenceTest.hpp	/^    std::unique_ptr<YoloDatabase> m_Database;$/;"	m	class:YoloTestCaseProvider
+m_FloatComparer	YoloInferenceTest.hpp	/^    boost::math::fpc::close_at_tolerance<float> m_FloatComparer;$/;"	m	class:YoloTestCase
+m_H	YoloDatabase.hpp	/^    float m_H;$/;"	m	struct:YoloBoundingBox
+m_Height	ImageNetDatabase.hpp	/^    unsigned int m_Height;$/;"	m	class:ImageNetDatabase
+m_Height	InferenceTestImage.hpp	/^    unsigned int m_Height;$/;"	m	class:InferenceTestImage
+m_Height	MobileNetDatabase.hpp	/^    unsigned int m_Height;$/;"	m	class:MobileNetDatabase
+m_ImageDir	YoloDatabase.hpp	/^    std::string m_ImageDir;$/;"	m	class:YoloDatabase
+m_ImageSet	ImageNetDatabase.hpp	/^    const std::vector<ImageSet> m_ImageSet;$/;"	m	class:ImageNetDatabase
+m_ImageSet	MobileNetDatabase.hpp	/^    const std::vector<ImageSet> m_ImageSet;$/;"	m	class:MobileNetDatabase
+m_InferenceTimesFile	InferenceTest.hpp	/^    std::string m_InferenceTimesFile;$/;"	m	struct:armnn::test::InferenceTestOptions
+m_Input	InferenceTest.hpp	/^    std::vector<typename TModel::DataType> m_Input;$/;"	m	class:armnn::test::InferenceModelTestCase
+m_InputBinding	InferenceModel.hpp	/^        std::string m_InputBinding;$/;"	m	struct:InferenceModel::Params
+m_InputBindingInfo	InferenceModel.hpp	/^    std::pair<armnn::LayerBindingId, armnn::TensorInfo> m_InputBindingInfo;$/;"	m	class:InferenceModel
+m_InputImage	ClassifierTestCaseData.hpp	/^    std::vector<DataType> m_InputImage;$/;"	m	class:ClassifierTestCaseData
+m_InputImage	YoloDatabase.hpp	/^    std::vector<float> m_InputImage;$/;"	m	class:YoloTestCaseData
+m_InputTensorShape	InferenceModel.hpp	/^        const armnn::TensorShape* m_InputTensorShape;$/;"	m	struct:InferenceModel::Params
+m_IsModelBinary	InferenceModel.hpp	/^        bool m_IsModelBinary;$/;"	m	struct:InferenceModel::Params
+m_IterationCount	InferenceTest.hpp	/^    unsigned int m_IterationCount;$/;"	m	struct:armnn::test::InferenceTestOptions
+m_Label	ClassifierTestCaseData.hpp	/^    const unsigned int m_Label;$/;"	m	class:ClassifierTestCaseData
+m_Label	InferenceTest.hpp	/^    unsigned int m_Label;$/;"	m	class:armnn::test::ClassifierTestCase
+m_MeanBgr	ImageNetDatabase.hpp	/^    const std::array<float, 3> m_MeanBgr = {{104.007965f, 116.669472f, 122.675102f}};$/;"	m	class:ImageNetDatabase
+m_Model	InferenceTest.hpp	/^    TModel& m_Model;$/;"	m	class:armnn::test::InferenceModelTestCase
+m_Model	InferenceTest.hpp	/^    std::unique_ptr<InferenceModel> m_Model;$/;"	m	class:armnn::test::ClassifierTestCaseProvider
+m_Model	YoloInferenceTest.hpp	/^    std::unique_ptr<Model> m_Model;$/;"	m	class:YoloTestCaseProvider
+m_ModelCommandLineOptions	InferenceTest.hpp	/^    typename InferenceModel::CommandLineOptions m_ModelCommandLineOptions;$/;"	m	class:armnn::test::ClassifierTestCaseProvider
+m_ModelCommandLineOptions	YoloInferenceTest.hpp	/^    typename Model::CommandLineOptions m_ModelCommandLineOptions;$/;"	m	class:YoloTestCaseProvider
+m_ModelDir	InferenceModel.hpp	/^        std::string m_ModelDir;$/;"	m	struct:InferenceModel::CommandLineOptions
+m_ModelPath	InferenceModel.hpp	/^        std::string m_ModelPath;$/;"	m	struct:InferenceModel::Params
+m_NetworkIdentifier	InferenceModel.hpp	/^    armnn::NetworkId m_NetworkIdentifier;$/;"	m	class:InferenceModel
+m_NumChannels	InferenceTestImage.hpp	/^    unsigned int m_NumChannels;$/;"	m	class:InferenceTestImage
+m_NumCorrectInferences	InferenceTest.hpp	/^    int m_NumCorrectInferences; \/\/ Referenced by test cases$/;"	m	class:armnn::test::ClassifierTestCaseProvider
+m_NumCorrectInferencesRef	InferenceTest.hpp	/^    int& m_NumCorrectInferencesRef;$/;"	m	class:armnn::test::ClassifierTestCase
+m_NumInferences	InferenceTest.hpp	/^    int m_NumInferences; \/\/ Referenced by test cases$/;"	m	class:armnn::test::ClassifierTestCaseProvider
+m_NumInferencesRef	InferenceTest.hpp	/^    int& m_NumInferencesRef;$/;"	m	class:armnn::test::ClassifierTestCase
+m_Output	InferenceTest.hpp	/^    std::vector<typename TModel::DataType> m_Output;$/;"	m	class:armnn::test::InferenceModelTestCase
+m_OutputBinding	InferenceModel.hpp	/^        std::string m_OutputBinding;$/;"	m	struct:InferenceModel::Params
+m_OutputBindingInfo	InferenceModel.hpp	/^    std::pair<armnn::LayerBindingId, armnn::TensorInfo> m_OutputBindingInfo;$/;"	m	class:InferenceModel
+m_RgbPack	Cifar10Database.hpp	/^    bool m_RgbPack;$/;"	m	class:Cifar10Database
+m_Runtime	InferenceModel.hpp	/^    armnn::IRuntimePtr m_Runtime;$/;"	m	class:InferenceModel
+m_ScaleValues	MnistDatabase.hpp	/^    bool m_ScaleValues;$/;"	m	class:MnistDatabase
+m_TestCaseId	InferenceTest.hpp	/^    unsigned int m_TestCaseId;$/;"	m	class:armnn::test::InferenceModelTestCase
+m_TopObjectDetections	YoloDatabase.hpp	/^    std::vector<YoloDetectedObject> m_TopObjectDetections;$/;"	m	class:YoloTestCaseData
+m_TopObjectDetections	YoloInferenceTest.hpp	/^    std::vector<YoloDetectedObject> m_TopObjectDetections;$/;"	m	class:YoloTestCase
+m_ValidationFileIn	InferenceTest.hpp	/^    std::string m_ValidationFileIn;$/;"	m	class:armnn::test::ClassifierTestCaseProvider
+m_ValidationFileOut	InferenceTest.hpp	/^    std::string m_ValidationFileOut;$/;"	m	class:armnn::test::ClassifierTestCaseProvider
+m_ValidationPredictions	InferenceTest.hpp	/^    const std::vector<unsigned int>& m_ValidationPredictions;$/;"	m	class:armnn::test::ClassifierTestCase
+m_ValidationPredictions	InferenceTest.hpp	/^    std::vector<unsigned int> m_ValidationPredictions; \/\/ Referenced by test cases$/;"	m	class:armnn::test::ClassifierTestCaseProvider
+m_ValidationPredictionsOut	InferenceTest.hpp	/^    std::vector<unsigned int> m_ValidationPredictionsOut; \/\/ Referenced by test cases$/;"	m	class:armnn::test::ClassifierTestCaseProvider
+m_ValidationPredictionsOut	InferenceTest.hpp	/^    std::vector<unsigned int>* m_ValidationPredictionsOut;$/;"	m	class:armnn::test::ClassifierTestCase
+m_VisualizePostOptimizationModel	InferenceModel.hpp	/^        bool m_VisualizePostOptimizationModel;$/;"	m	struct:InferenceModel::CommandLineOptions
+m_VisualizePostOptimizationModel	InferenceModel.hpp	/^        bool m_VisualizePostOptimizationModel;$/;"	m	struct:InferenceModel::Params
+m_W	YoloDatabase.hpp	/^    float m_W;$/;"	m	struct:YoloBoundingBox
+m_Width	ImageNetDatabase.hpp	/^    unsigned int m_Width;$/;"	m	class:ImageNetDatabase
+m_Width	InferenceTestImage.hpp	/^    unsigned int m_Width;$/;"	m	class:InferenceTestImage
+m_Width	MobileNetDatabase.hpp	/^    unsigned int m_Width;$/;"	m	class:MobileNetDatabase
+m_X	YoloDatabase.hpp	/^    float m_X;$/;"	m	struct:YoloBoundingBox
+m_Y	YoloDatabase.hpp	/^    float m_Y;$/;"	m	struct:YoloBoundingBox
+main	CaffeAlexNet-Armnn/CaffeAlexNet-Armnn.cpp	/^int main(int argc, char* argv[])$/;"	f
+main	CaffeCifar10AcrossChannels-Armnn/CaffeCifar10AcrossChannels-Armnn.cpp	/^int main(int argc, char* argv[])$/;"	f
+main	CaffeInception_BN-Armnn/CaffeInception_BN-Armnn.cpp	/^int main(int argc, char* argv[])$/;"	f
+main	CaffeMnist-Armnn/CaffeMnist-Armnn.cpp	/^int main(int argc, char* argv[])$/;"	f
+main	CaffeResNet-Armnn/CaffeResNet-Armnn.cpp	/^int main(int argc, char* argv[])$/;"	f
+main	CaffeSqueezeNet1_0-Armnn/CaffeSqueezeNet1_0-Armnn.cpp	/^int main(int argc, char* argv[])$/;"	f
+main	CaffeVGG-Armnn/CaffeVGG-Armnn.cpp	/^int main(int argc, char* argv[])$/;"	f
+main	CaffeYolo-Armnn/CaffeYolo-Armnn.cpp	/^int main(int argc, char* argv[])$/;"	f
+main	ExecuteNetwork/ExecuteNetwork.cpp	/^int main(int argc, char* argv[])$/;"	f
+main	ExecuteNetwork_TfMobilenet/ExecuteNetwork.cpp	/^int main(int argc, char* argv[])$/;"	f
+main	ExecuteNetwork_TfMobilenet/mnist_tf.cpp	/^int main(int argc, char** argv)$/;"	f
+main	ExecuteNetwork_backup/ExecuteNetwork.cpp	/^int main(int argc, char* argv[])$/;"	f
+main	MultipleNetworksCifar10/MultipleNetworksCifar10.cpp	/^int main(int argc, char* argv[])$/;"	f
+main	TfCifar10-Armnn/TfCifar10-Armnn.cpp	/^int main(int argc, char* argv[])$/;"	f
+main	TfInceptionV3-Armnn/TfInceptionV3-Armnn.cpp	/^int main(int argc, char* argv[])$/;"	f
+main	TfMnist-Armnn/TfMnist-Armnn.cpp	/^int main(int argc, char* argv[])$/;"	f
+main	TfMobileNet-Armnn/TfMobileNet-Armnn.cpp	/^int main(int argc, char* argv[])$/;"	f
+main	TfResNext_Quantized-Armnn/TfResNext_Quantized-Armnn.cpp	/^int main(int argc, char* argv[])$/;"	f
+operator >>	InferenceTest.hpp	/^inline std::istream& operator>>(std::istream& in, armnn::Compute& compute)$/;"	f	namespace:armnn
+override	InferenceTest.hpp	/^    virtual TestCaseResult ProcessResult(const InferenceTestOptions& params) override;$/;"	m	class:armnn::test::ClassifierTestCase
+override	InferenceTest.hpp	/^    virtual bool OnInferenceTestFinished() override;$/;"	m	class:armnn::test::ClassifierTestCaseProvider
+override	InferenceTest.hpp	/^    virtual bool ProcessCommandLineOptions() override;$/;"	m	class:armnn::test::ClassifierTestCaseProvider
+override	InferenceTest.hpp	/^    virtual std::unique_ptr<IInferenceTestCase> GetTestCase(unsigned int testCaseId) override;$/;"	m	class:armnn::test::ClassifierTestCaseProvider
+override	InferenceTest.hpp	/^    virtual void AddCommandLineOptions(boost::program_options::options_description& options) override;$/;"	m	class:armnn::test::ClassifierTestCaseProvider
+test	InferenceTest.cpp	/^namespace test$/;"	n	namespace:armnn	file:
+test	InferenceTest.hpp	/^namespace test$/;"	n	namespace:armnn
+~IInferenceTestCase	InferenceTest.hpp	/^    virtual ~IInferenceTestCase() {}$/;"	f	class:armnn::test::IInferenceTestCase
+~IInferenceTestCaseProvider	InferenceTest.hpp	/^    virtual ~IInferenceTestCaseProvider() {}$/;"	f	class:armnn::test::IInferenceTestCaseProvider

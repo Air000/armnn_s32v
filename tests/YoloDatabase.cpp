@@ -60,7 +60,7 @@ using YoloInputOutput = std::pair<const char* const, YoloDetectedObject>;
 const std::array<YoloInputOutput,1> g_PerTestCaseInputOutput =
 {
     YoloInputOutput{
-        "yolo_dog_448x448.png",
+        "horses-1.jpg",
         { to_underlying(YoloVocClass::Dog), YoloBoundingBox{ 233.0f, 256.0f, 299.0f, 462.0f }, 0.5088733434677124f }
     },
 };
